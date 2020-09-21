@@ -56,7 +56,7 @@ ul li a:hover {
 }
 .cart {
   display: block;
-  background-image: url(/img/shoppingcart2.svg);
+  background-image: url(./img/shoppingcart2.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 10px;
@@ -64,14 +64,14 @@ ul li a:hover {
 }
 .search {
   display: block;
-  background-image: url(/img/search.svg);
+  background-image: url(./img/search.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 10px;
   height: 10px;
 }
 header {
-  background-image: url(/img/headerback.jpg);
+  background-image: url(./img/headerback.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -209,7 +209,7 @@ h4 {
   padding: 0;
 }
 .aboutpic1 {
-  background-image: url(/img/aboutus-1.jpg);
+  background-image: url(./img/aboutus-1.jpg);
   margin-right: 30px;
   display: inline-block;
 }
@@ -228,7 +228,7 @@ h4 {
     align-items: center;
 }
 .supericon{
-  background-image: url(/img/superteamlogo.svg);
+  background-image: url(./img/superteamlogo.svg);
   background-repeat: no-repeat;
   width: 35px;
 height: 26px;
@@ -247,11 +247,11 @@ color: white;
   box-shadow: 10px 10px var(--myblue);
 }
 .aboutpic2 {
-  background-image: url(/img/aboutus-2.jpg);
+  background-image: url(./img/aboutus-2.jpg);
   margin-right: 30px;
 }
 .aboutpic3 {
-  background-image: url(/img/aboutus-3.jpg);
+  background-image: url(./img/aboutus-3.jpg);
 }
 .backcolor {
   width: 100%;
@@ -318,22 +318,22 @@ color: white;
   
 }
 .servicesicon1 {
-  background-image: url(/img/block1.svg);
+  background-image: url(./img/block1.svg);
 }
 .servicesicon2 {
-  background-image: url(/img/block2.svg);
+  background-image: url(./img/block2.svg);
 }
 .servicesicon3 {
-  background-image: url(/img/block3.svg);
+  background-image: url(./img/block3.svg);
 }
 .servicesicon4 {
-  background-image: url(/img/block4.svg);
+  background-image: url(./img/block4.svg);
 }
 .servicesicon5 {
-  background-image: url(/img/block5.svg);
+  background-image: url(./img/block5.svg);
 }
 .servicesicon6 {
-  background-image: url(/img/block6.svg);
+  background-image: url(./img/block6.svg);
 }
 .servicesblock span h6 {
   text-transform: uppercase;
@@ -361,7 +361,7 @@ color: white;
 .section3 {
   width: 100%;
   height: 841px;
-  background-image: url(/img/section3back.jpg);
+  background-image: url(./img/section3back.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -383,7 +383,7 @@ color: white;
   width: 470px;
   height: 480px;
   border-radius: 25% 25% 0 0;
-  background-image: url(/img/uniquedesign.jpg);
+  background-image: url(./img/uniquedesign.jpg);
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -412,7 +412,7 @@ color: white;
   display: inline-block;
 }
 .whatwedopic {
-  background-image: url(/img/watwedo.jpg);
+  background-image: url(./img/watwedo.jpg);
 }
 .whatwedotext {
 display: flex;
@@ -445,13 +445,13 @@ align-items: center;
   background-position: center;background-size: cover;
 }
 .doicon1{
-  background-image: url(/img/iconphotography.svg);
+  background-image: url(./img/iconphotography.svg);
 }
 .doicon2{
-  background-image: url(/img/iconcreativity.svg);
+  background-image: url(./img/iconcreativity.svg);
 }
 .doicon3 {
-  background-image: url(/img/icondesign.svg);
+  background-image: url(./img/icondesign.svg);
 
 }
 .dotext2 {
@@ -493,7 +493,7 @@ text-transform: uppercase;
   border: solid 2px var(--myblue);
 }
 .chaticon {
-  background-image: url(/img/chaticon.svg);
+  background-image: url(./img/chaticon.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -574,36 +574,36 @@ justify-content: space-around;
   background-color: var(--myyellow);
 }
 .facebook {
-  background-image: url(/img/facebook-red.svg);
+  background-image: url(./img/facebook-red.svg);
   border-right: solid 1px var(--myorange);
  
 }
 .facebook:hover{
   background-color: var(--myorange);
-  background-image: url(/img/facebook\ -\ white.svg);
+  background-image: url(./img/facebook\ -\ white.svg);
 }
 .twitter {
-  background-image: url(/img/twitter-red.svg);
+  background-image: url(./img/twitter-red.svg);
   border-right: solid 1px var(--myorange);
 }
 .twitter:hover{
   background-color: var(--myorange);
-background-image: url(/img/twitter-white.svg);
+background-image: url(./img/twitter-white.svg);
 }
 .pinterest {
-  background-image: url(/img/pinterest-red.svg);
+  background-image: url(./img/pinterest-red.svg);
   border-right: solid 1px var(--myorange);
 }
 .pinterest:hover{
   background-color: var(--myorange);
-background-image: url(/img/pinterest\ -\ white.svg);
+background-image: url(./img/pinterest\ -\ white.svg);
 }
 .insta{
-  background-image: url(/img/insta-red.svg);
+  background-image: url(./img/insta-red.svg);
 }
 .insta:hover{
   background-color: var(--myorange);
-background-image: url(/img/insta\ -\ white.svg);
+background-image: url(./img/insta\ -\ white.svg);
 }
 .teampic {
   width: 31%;
@@ -619,16 +619,16 @@ background-image: url(/img/insta\ -\ white.svg);
 }
 
 .ourteampic1 {
-  background-image: url(/img/ourteam1.jpg);
+  background-image: url(./img/ourteam1.jpg);
   background-position: left;
   margin-right: 25px;
 }
 .ourteampic2 {
-background-image: url(/img/ourteam2.jpg);
+background-image: url(./img/ourteam2.jpg);
 margin-right: 25px;
 }
 .ourteampic3 {
-background-image: url(/img/ourteam3.jpg);
+background-image: url(./img/ourteam3.jpg);
 }
 .teamtext {
   width: 31%;
@@ -658,7 +658,7 @@ line-height: 24px;
   max-width: 1200px ;
   margin: 0 auto;
   height: 200px;
-  background-image: url(/img/ikonujosla.jpg);
+  background-image: url(./img/ikonujosla.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -684,7 +684,7 @@ line-height: 24px;
     )
 }
 .creaticon{
-  background-image: url(/img/creativelydesign.svg);
+  background-image: url(./img/creativelydesign.svg);
   background-repeat: no-repeat;
   width: 35px;
   height: 26px;  
@@ -717,33 +717,33 @@ background-size: cover;
   opacity: 1;
 }
 .griditem1{
-  background-image: url(/img/griditem1.jpg);
+  background-image: url(./img/griditem1.jpg);
   background-position: bottom;
 }
 .griditem2{
-  background-image: url(/img/griditem2.jpg);
+  background-image: url(./img/griditem2.jpg);
   background-position: left bottom;
 }
 .griditem3{
-  background-image: url(/img/griditem3.jpg);
+  background-image: url(./img/griditem3.jpg);
   background-position: center;
   grid-column: 3/3;
   grid-row: 1/3;
 }
 .griditem4{
-  background-image: url(/img/griditem4.jpg);
+  background-image: url(./img/griditem4.jpg);
   background-position: top;
 }
 .griditem5{
-  background-image: url(/img/griditem5.jpg);
+  background-image: url(./img/griditem5.jpg);
   background-position: right;
 }
 .griditem6{
-  background-image: url(/img/griditem6.jpg);
+  background-image: url(./img/griditem6.jpg);
   background-position: center;
 }
 .griditem7{
-  background-image: url(/img/griditem7.jpg);
+  background-image: url(./img/griditem7.jpg);
   background-position: center;
 }
 .feedbackblock{
@@ -760,7 +760,7 @@ background-size: cover;
   height: inherit;
 }
 .feedbackicon { 
-  background-image: url(/img/feedbackicon.jpg);
+  background-image: url(./img/feedbackicon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -769,7 +769,7 @@ background-size: cover;
   height: 150px;
 }
 .peopleopinion {
-  background-image: url(/img/alps.jpg);
+  background-image: url(./img/alps.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -810,23 +810,23 @@ background-size: cover;
   background-repeat: no-repeat;
 }
 .revlogo1{
-  background-image: url(/img/revlogo1.jpg);
+  background-image: url(./img/revlogo1.jpg);
   background-position: top;
   background-size: 200px;
 }
 .revlogo2{
-  background-image: url(/img/revlogo2.jpg);
+  background-image: url(./img/revlogo2.jpg);
   background-position: center;
   background-size: 160px;
 
 }
 .revlogo3{
-  background-image: url(/img/revlogo3.jpg);
+  background-image: url(./img/revlogo3.jpg);
   background-position: center;
   background-size: 160px;
 }
 .revlogo4{
-  background-image: url(/img/revlogo4.jpg);
+  background-image: url(./img/revlogo4.jpg);
   background-position-x: 20%;
   background-position-y: 10%;
   background-size: 300px;
@@ -916,13 +916,13 @@ font-weight: bold;
 line-height: 37px;
 }
 .blogpic1 {
-background-image: url(/img/blogpic1.jpg);
+background-image: url(./img/blogpic1.jpg);
 }
 .blogpic2{
-  background-image: url(/img/blogpic2.jpg);
+  background-image: url(./img/blogpic2.jpg);
 }
 .blogpic3{
-  background-image: url(/img/blogpic3.jpg);
+  background-image: url(./img/blogpic3.jpg);
 }
 .blogtext {
   width: 30%;
@@ -964,13 +964,13 @@ margin-bottom: 10px;
 }
 
 .eye::before{
-  content: url(/img/eye.svg);
+  content: url(./img/eye.svg);
   width: 15px;
   height: 15px;
   margin: 0 5px 0 0;
 }
 .chat::before{
-  content: url(/img/chat.svg);
+  content: url(./img/chat.svg);
   width: 10px;
   height: 10px;
   margin: 0 5px 0 10px;
@@ -981,7 +981,7 @@ footer{
 .map {
   width: 100%;
   height: 150px;
-  background-image: url(/img/map.jpg);
+  background-image: url(./img/map.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -1001,7 +1001,7 @@ footer{
   align-items: center;
 }
 .mapicon {
-  background-image: url(/img/mapicon.svg);
+  background-image: url(./img/mapicon.svg);
   width: 15px;
   height: 20px;
   background-repeat: no-repeat;
@@ -1102,29 +1102,29 @@ margin-right: 5px;
   background-size: contain;
 }
 .facebook-foot {
-  background-image: url(/img/facebook-foot.svg);
+  background-image: url(./img/facebook-foot.svg);
   margin-right: 0 !important;
 }
 .twitter-foot {
-  background-image: url(/img/twitter-foot.svg);
+  background-image: url(./img/twitter-foot.svg);
 }
 .instagram-foot {
-  background-image: url(/img/instagram-foot.svg);
+  background-image: url(./img/instagram-foot.svg);
 }
 .pinterest-foot{
-  background-image: url(/img/pinterest-foot.svg);
+  background-image: url(./img/pinterest-foot.svg);
 }
 .gmail-foot {
-  background-image: url(/img/gmail-foot.svg);
+  background-image: url(./img/gmail-foot.svg);
 }
 .youtube-foot {
-  background-image: url(/img/youtube-foot.svg);
+  background-image: url(./img/youtube-foot.svg);
 }
 .world-foot {
-  background-image: url(/img/world-foot.svg);
+  background-image: url(./img/world-foot.svg);
 }
 .tublr-foot {
-  background-image: url(/img/tumblr-foot.svg);
+  background-image: url(./img/tumblr-foot.svg);
 }
 input {
   border: solid 1px rgb(187, 186, 186);
@@ -1178,13 +1178,13 @@ line-height: 17px;
   background-size: cover;
 }
 .blogpicture1{
-background-image: url(/img/blogpicture1.jpg);
+background-image: url(./img/blogpicture1.jpg);
 }
 .blogpicture2 {
-background-image: url(/img/blogpicture2.jpg);
+background-image: url(./img/blogpicture2.jpg);
 }
 .blogpicture3 {
-background-image: url(/img/blogpicture3.jpg);
+background-image: url(./img/blogpicture3.jpg);
 }
 .blogstext {
   width: 60%;
