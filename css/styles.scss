@@ -1,0 +1,1017 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&family=Roboto&display=swap");
+@import "global.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+//section-Main
+
+.main {
+  background-image: url(../img/headerback.jpg);
+  @include background;
+}
+section {
+  width: 100%;
+  height: 725px;
+  .navbar {
+    margin: $center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $eighty;
+    height: 80px;
+  }
+  .logo {
+    @include monseratBold;
+    color: white;
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .navigation {
+    a {
+      padding: 5px;
+      margin: 5px;
+      font-family: $font2;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: white;
+      text-transform: uppercase;
+      &:hover {
+        color: $coloryellow;
+        border-bottom: $coloryellow 2px solid;
+      }
+      @include tablet() {
+        display: none;
+      }
+    }
+    .search {
+      background-image: url(../img/icons/search.svg);
+      @include background;
+      background-size: contain;
+    }
+    .cart {
+      background-image: url(../img/icons/shoppingcart2.svg);
+      @include background;
+      background-size: contain;
+    }
+    .burgermenu {
+      position: relative;
+      z-index: 2;
+      margin-right: 20px;
+      width: 40px;
+      height: 40px;
+      display: none;
+      cursor: pointer;
+
+      background-image: url(../img/icons/burgermenu.svg);
+      @include background;
+      background-size: contain;
+      @include tablet() {
+        display: block;
+        &:hover {
+          background-image: url(../img/icons/close.svg);
+          transition: 1s;
+        }
+        &:hover .dropdown {
+          display: block;
+        }
+      }
+    }
+    .dropdown {
+      position: absolute;
+      right: 0;
+      display: none;
+      margin-top: 40px;
+      div {
+        padding: 10px 30px;
+        background-color: $coloryellow;
+        border: solid 2px $colorgrey;
+        margin: 2px;
+        border-radius: 5px;
+        color: white;
+        @include monseratBold;
+        &:hover {
+          color: black;
+          background-color: $colororange;
+        }
+      }
+    }
+  }
+  .maincontent {
+    @include flex;
+    margin: $center;
+    flex-direction: column;
+    height: calc(100% - 80px);
+    text-align: center;
+    h4 {
+      @include kaushanNorm;
+      color: white;
+      font-size: 40px;
+      line-height: 35px;
+      @include phone() {
+        font-size: 25px;
+      }
+    }
+    h1 {
+      @include monseratBold;
+      color: white;
+      font-size: 100px;
+      line-height: 100px;
+      text-transform: uppercase;
+      margin-bottom: 100px;
+      @include phone() {
+        font-size: 65px;
+      }
+    }
+    a {
+      margin-bottom: 50px;
+      position: relative;
+      color: white;
+      border: white solid 2px;
+      padding: 5px 15px;
+      text-transform: uppercase;
+      @include monseratBold;
+      &::before {
+        content: "";
+        background-color: white;
+        width: 50px;
+        height: 3px;
+        position: absolute;
+        top: -50px;
+        right: 33%;
+      }
+      &:hover {
+        color: $colororange;
+        border: $colororange solid 2px;
+      }
+    }
+  }
+  .mainfooter {
+    display: flex;
+    width: 80%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    @include phone() {
+      display: none;
+    }
+  }
+  .mainfootnav {
+    width: 25%;
+    border-top: 3px solid white;
+    margin: 4px;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    &:hover {
+      animation: loadingcolor 3s forwards;
+    }
+  }
+}
+h3 {
+  @include kaushanNorm;
+  font-size: 24px;
+  line-height: 35px;
+  text-shadow: 0.5px 0.5px $colororange;
+  margin-top: 30px;
+  text-align: center;
+  @include phone() {
+    font-size: 16px;
+  }
+}
+h2 {
+  @include monseratBold;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px $colororange;
+  position: relative;
+  padding-bottom: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $colororange;
+    width: 30%;
+    height: 3px;
+    bottom: 0;
+    left: 35%;
+  }
+  @include phone() {
+    font-size: 20px;
+  }
+}
+
+//section-Story about us
+
+.aboutUs {
+  @include flex-star;
+  position: relative;
+  @include tablet() {
+    height: 600px;
+    @include phone() {
+      height: 500px;
+    }
+  }
+  p {
+    @include paragraph;
+  }
+  .superteam {
+    @include flex;
+    width: $eighty;
+    margin: $center;
+    .overlay {
+      @include overlay;
+      @include flex;
+      display: none;
+      flex-direction: column;
+      color: white;
+      @include monseratBold;
+      .superteamicon {
+        width: 30px;
+        height: 30px;
+        @include background;
+        background-image: url(../img/icons/superteamlogo.svg);
+        background-size: contain;
+        @include tablet() {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      span {
+        @include tablet() {
+          font-size: 10px;
+        }
+      }
+    }
+    .superteampicture1 {
+      @include background;
+      background-image: url(../img/aboutus-1.jpg);
+      @include superteam;
+      margin-right: 20px;
+      @include superteamhover;
+    }
+    .superteampicture2 {
+      @include background;
+      background-image: url(../img/aboutus-2.jpg);
+      @include superteam;
+      margin-right: 20px;
+      @include superteamhover;
+    }
+    .superteampicture3 {
+      @include background;
+      background-image: url(../img/aboutus-3.jpg);
+      @include superteam;
+      @include superteamhover;
+    }
+  }
+  .aboutusfoot {
+    width: 100%;
+    background-color: $colorblue;
+    position: absolute;
+    bottom: 0;
+    margin-top: 80px;
+    .aboutstats {
+      width: $eighty;
+      margin: $center;
+      height: 210px;
+      display: flex;
+      @include tablet() {
+        height: 140px;
+      }
+      @include phone() {
+        height: 94px;
+      }
+    }
+    .bordersright {
+      border-right: 2px solid white;
+    }
+    .statbox {
+      padding: 0 5px;
+      width: 20%;
+      @include flex;
+      flex-direction: column;
+      p {
+        margin: 0;
+        font-size: 50px;
+        line-height: 88px;
+        color: white;
+        @include monseratBold;
+        @include tablet() {
+          font-size: 32px;
+        }
+        @include phone() {
+          font-size: 21px;
+          height: 60px;
+        }
+      }
+      span {
+        color: white;
+        text-align: center;
+        font-family: $font2;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        @include tablet() {
+          font-size: 11px;
+        }
+        @include phone() {
+          font-size: 7px;
+        }
+      }
+    }
+  }
+}
+
+//section-Services
+h5 {
+  font-size: 14px;
+  line-height: 17px;
+  @include monseratBold;
+  text-align: left;
+  padding-left: 5px;
+  text-shadow: 0.5px 0.5px $colorblue;
+  text-transform: uppercase;
+}
+.services {
+  height: 600px;
+  @include flex-star;
+  .servicecontent {
+    margin: $center;
+    width: $eighty;
+    height: 300px;
+    margin-top: 30px;
+    @include flex;
+    flex-wrap: wrap;
+    .sectionbox {
+      width: 330px;
+      margin: 0 5px 2px 0;
+      @include tablet() {
+        margin-bottom: 10px;
+      }
+      @include flex;
+      .photography {
+        background-image: url(../img/icons/block1.svg);
+      }
+      .design {
+        background-image: url(../img/icons/block2.svg);
+      }
+      .creativity {
+        background-image: url(../img/icons/block3.svg);
+      }
+      .seo {
+        background-image: url(../img/icons/block4.svg);
+      }
+      .codinglang {
+        background-image: url(../img/icons/block5.svg);
+      }
+      .digital {
+        background-image: url(../img/icons/block6.svg);
+      }
+      .servisicon {
+        @include background;
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 24px;
+        @include Robotonormal;
+        text-align: left;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+//section-devices
+
+.devices {
+  height: 600px;
+  background-image: url(../img/section3back.jpg);
+  @include background;
+  .overlaydiv {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(199, 199, 199, 0.651);
+    @include flex-star;
+    .uniquedesign {
+      width: 250px;
+      height: 350px;
+      margin: $center;
+      border: 2px solid $colorgrey;
+      border-bottom: none;
+      background-image: url(../img/uniquedesign.jpg);
+      @include background;
+      border-radius: 12px 12px 0 0;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+//Section-what we do
+
+.whatwedo {
+  width: 100%;
+  height: fit-content;
+  @include flex-star;
+  margin-bottom: 50px;
+  p {
+    @include paragraph;
+  }
+  .wedocontent {
+    width: $eighty;
+    @include flex;
+    @include smallDestcop() {
+      flex-direction: column;
+    }
+    .wedoblock {
+      width: 50%;
+      height: 370px;
+      @include smallDestcop() {
+        width: 100%;
+      }
+    }
+    .wedocontentpicture {
+      background-image: url(../img/watwedo.jpg);
+      @include background;
+      margin-right: 10px;
+      @include smallDestcop() {
+        margin: 0 0 10px 0;
+      }
+    }
+    .wedotextblock {
+      border: 2px solid $colorgrey;
+      border-bottom: none;
+      display: flex;
+      flex-direction: column;
+      @include smallDestcop() {
+        margin-bottom: 20px;
+      }
+    }
+    .textblock {
+      position: relative;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid $colorgrey;
+      height: 20%;
+      font-size: 14px;
+      line-height: 17px;
+      @include monseratBold;
+      text-transform: uppercase;
+      p {
+        width: fit-content;
+      }
+      .arrowdown {
+        position: absolute;
+        right: 0;
+        bottom: 30;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        background-image: url(../img/icons/arrowdown.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    .innertext {
+      height: 40%;
+      padding: 5px;
+      text-align: left;
+      border-bottom: $colorgrey 2px solid;
+      scroll-behavior: smooth;
+      overflow-y: scroll;
+      font-family: $font3;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 24px;
+      color: gray;
+    }
+    .texticon {
+      width: 30px;
+      height: 30px;
+      @include background;
+      margin: 10px;
+    }
+    .texticon1 {
+      background-image: url(../img/icons/iconphotography.svg);
+    }
+    .texticon2 {
+      background-image: url(../img/icons/iconcreativity.svg);
+    }
+    .texticon3 {
+      background-image: url(../img/icons/icondesign.svg);
+    }
+  }
+}
+//customer review
+.customerreview {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: $colorgrey;
+  @include tablet() {
+    height: 250px;
+  }
+  @include phone() {
+    height: 300px;
+  }
+  .revcont {
+    width: $eighty;
+    height: inherit;
+    margin: $center;
+    @include flex;
+    .revicon {
+      margin: auto 10px auto 30px;
+      width: 100px;
+      height: 100px;
+      background-image: url(../img/icons/chaticon.svg);
+      @include background;
+      background-size: contain;
+    }
+    .revtext {
+      height: 100px;
+      width: $eighty;
+      margin-right: 30px;
+      p {
+        font-family: $font3;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        color: grey;
+        height: fit-content;
+      }
+      .review {
+        color: black;
+        @include kaushanNorm;
+        font-size: 20px;
+        line-height: 35px;
+        &::before {
+          content: "𑁋";
+          color: $colororange;
+        }
+      }
+    }
+  }
+  .arrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    @include background;
+    background-size: contain;
+    bottom: 90px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .arrowleft {
+    background-image: url(../img/icons/arrow-left.svg);
+    left: 10%;
+    display: none;
+  }
+  .arrowright {
+    background-image: url(../img/icons/arrow-right.svg);
+    right: 10%;
+  }
+  .carouselitem-2 {
+    display: none;
+    .revicon2 {
+      background-image: url(../img/feedbackicon.jpg);
+      @include background;
+      border-radius: 50px;
+    }
+  }
+}
+//section-oue team
+.ourteam {
+  @include flex-star;
+  height: fit-content;
+  p {
+    @include paragraph;
+  }
+  .team {
+    width: $eighty;
+    height: fit-content;
+    @include flex;
+    @include tablet() {
+      flex-direction: column;
+    }
+  }
+  .teamframe {
+    width: 33%;
+    @include flex-star;
+    height: fit-content;
+    @include tablet() {
+      width: 100%;
+    }
+  }
+  .teammember {
+    width: 100%;
+    height: 400px;
+    @include background;
+    &:hover .overlay2 {
+      display: flex;
+    }
+    .overlay2 {
+      width: 100%;
+      height: 100%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      @include overlay;
+      .socialicons {
+        width: fit-content;
+        height: fit-content;
+        background-color: $coloryellow;
+        @include flex;
+        .socaccounts {
+          width: 40px;
+          height: 40px;
+          @include backgroundicons;
+          background-size: 60%;
+        }
+        .socialicon1 {
+          background-image: url(../img/icons/facebook-red.svg);
+          border-right: solid 1px $colororange;
+          background-size: 40%;
+          &:hover {
+            background-color: $colororange;
+            background-image: url(../img/icons/facebookwhite.svg);
+          }
+        }
+        .socialicon2 {
+          background-image: url(../img/icons/twitterred.svg);
+          border-right: solid 1px $colororange;
+          &:hover {
+            background-color: $colororange;
+            background-image: url(../img/icons/twitterwhite.svg);
+          }
+        }
+        .socialicon3 {
+          background-image: url(../img/icons/pinterestred.svg);
+          border-right: solid 1px $colororange;
+          &:hover {
+            background-color: $colororange;
+            background-image: url(../img/icons/pinterestwhite.svg);
+          }
+        }
+        .socialicon4 {
+          background-image: url(../img/icons/instared.svg);
+          &:hover {
+            background-color: $colororange;
+            background-image: url(../img/icons/instawhite.svg);
+          }
+        }
+      }
+    }
+  }
+  .member1 {
+    background-image: url(../img/ourteam1.jpg);
+    background-position: left;
+  }
+  .member2 {
+    background-image: url(../img/ourteam2.jpg);
+  }
+  .member3 {
+    background-image: url(../img/ourteam3.jpg);
+  }
+  .teamnames {
+    width: 100%;
+    height: 50px;
+    @include flex-star;
+    h6 {
+      font-size: 14px;
+      line-height: 17px;
+      @include monseratBold;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 13px;
+      line-height: 24px;
+      color: gray;
+      @include Robotonormal;
+      text-shadow: none;
+      margin: 0;
+    }
+  }
+  .centerbox {
+    margin: 0 15px 0 15px;
+  }
+  .iconbar {
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    background-image: url(../img/ikonujosla.jpg);
+    @include background;
+    background-size: 100%;
+  }
+}
+
+//section-Work
+.work {
+  width: 100%;
+  @include flex-star;
+  p {
+    @include paragraph;
+  }
+  .overlaygriditem {
+    width: inherit;
+    height: inherit;
+    @include overlay;
+    @include flex;
+    flex-direction: column;
+    opacity: 0;
+    .gridicon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 5px;
+      @include backgroundicons;
+      background-image: url(../img/icons/creativelydesign.svg);
+    }
+    h6 {
+      @include monseratBold;
+      color: white;
+      font-size: 10px;
+      line-height: 17px;
+    }
+    p {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 24px;
+      font-family: $font3;
+      color: white;
+      margin: 0;
+    }
+  }
+  .griditem {
+    @include backgroundgrid;
+    &:hover .overlaygriditem {
+      opacity: 1;
+    }
+  }
+  .griditem1 {
+    grid-area: area-1;
+    background-image: url(../img/griditem1.jpg);
+    background-position: bottom;
+  }
+  .griditem2 {
+    grid-area: area-2;
+    background-image: url(../img/griditem2.jpg);
+    background-position: left bottom;
+  }
+  .griditem3 {
+    grid-area: area-3;
+    background-image: url(../img/griditem3.jpg);
+    background-position: center;
+  }
+  .griditem4 {
+    grid-area: area-4;
+    background-image: url(../img/griditem4.jpg);
+  }
+  .griditem5 {
+    grid-area: area-5;
+    background-image: url(../img/griditem5.jpg);
+    @include tablet() {
+      background-position: center;
+    }
+  }
+  .griditem6 {
+    grid-area: area-6;
+    background-image: url(../img/griditem6.jpg);
+  }
+  .griditem7 {
+    grid-area: area-7;
+    background-image: url(../img/griditem7.jpg);
+    background-position: center;
+  }
+  .gridcontainer {
+    width: 100%;
+    height: 450px;
+    display: grid;
+    grid-template-areas:
+      "area-1 area-2 area-3 area-4"
+      "area-5 area-6 area-3 area-7";
+    gap: 2px;
+    @include tablet() {
+      grid-template-areas:
+        "area-1 area-2 area-3"
+        "area-4 area-6 area-3"
+        "area-5 area-5 area-7";
+    }
+  }
+}
+//section-Clinets
+
+.clients {
+  width: 100%;
+  height: fit-content;
+background-image: url(../img/alps.jpg);
+@include background;
+  .overlayclients {
+    width: inherit;
+    height: inherit;
+    @include flex-star;
+    background-color: rgba(201, 200, 200, 0.801);
+  }
+  .clientsreview {
+    height: fit-content;
+    width: $eighty;
+    margin: $center;
+    @include flex-star;
+    @include tablet() {
+      flex-direction: column;
+    }
+
+  }
+  .reviewboxframe {
+    width: 100%;
+    height: fit-content;
+    @include flex;
+    margin-top: 20px;
+    @include tablet() {
+      flex-direction: column;
+    }
+  }
+  .reviewbox {
+    width: 50%;
+    height: 200px;
+    @include flex;
+    @include tablet() {
+     width: 100%;
+    }
+    .reviewpic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      @include background;
+    }
+    .reviewpic1 {
+      background-image: url(../img/revlogo1.jpg);
+      background-repeat: no-repeat;
+      background-size: 220px;
+      background-position: top;
+    }
+    .reviewpic2 {
+      background-image: url(../img/revlogo2.jpg);
+      background-size: 150%;
+    }
+    .reviewpic3 {
+      background-image: url(../img/revlogo3.jpg);
+    }
+    .reviewpic4 {
+      background-image: url(../img/revlogo4.jpg);
+      background-position-x: 20%;
+      background-position-y: 10%;
+      background-size: 300px;
+    }
+    .revinformation {
+      width: 70%;
+      height: inherit;
+      @include flex;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-left: 5px;
+      h4 {
+        font-size: 14px;
+        line-height: 17px;
+        @include monseratBold;
+        text-transform: uppercase;
+      }
+      h6 {
+        position: relative;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+        padding-bottom: 5px;
+        @include Robotonormal;
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $colororange;
+          width: 60%;
+          height: 3px;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      p {
+        font-size: 15px;
+        line-height: 24px;
+        @include Robotonormal;
+        color: gray;
+      }
+    }
+  }
+}
+
+//SECTION-Blog
+.blog {
+  width: 100%;
+  height: fit-content;
+  @include flex-star;
+  .blogcontent {
+    width: $eighty;
+    height: fit-content;
+    margin: $center;
+    @include flex;
+    margin: 30px 0 30px 0;
+    @include tablet () {
+      flex-direction: column;
+    }
+  }
+  .blogcard {
+    width: 34%;
+    height: 300px;
+    @include tablet () {
+      width: 100%;
+      margin-bottom: 10px;
+    }    
+    .blogpicture{
+width: 100%;
+height: 67%;
+@include background;
+position: relative;
+div {
+  position: absolute;
+  left: -10px;
+  bottom: 15px;
+  width: 60px;
+  height: 80px;
+  background-color: $colorblue;
+  @include flex;
+  flex-direction: column;
+  @include monseratBold;
+  color:  white;
+  font-size: 10px;
+  text-shadow: 0.5px 0.5px $coloryellow;
+  p {
+    font-size: 30px;
+line-height: 37px;
+  }
+}
+    }
+    .blogpicture1 {
+background-image: url(../img/blogpic1.jpg);
+    }
+    .blogpicture2 {
+      background-image: url(../img/blogpic2.jpg);
+    }
+    .blogpicture3 {
+      background-image: url(../img/blogpic3.jpg);
+    }
+
+    .bloginfo {
+      width: 100%;
+      height: 33%;
+      h6 {
+        @include monseratBold;
+        font-size: 16px;
+line-height: 17px;
+margin: 10px 0 15px 0;
+      }
+      p {
+        @include Robotonormal;
+        font-size: 13px;
+line-height: 24px;
+color: gray;
+      }
+      div{
+        display: flex;
+        p{
+          margin-right: 10px;
+          @include Robotonormal;
+          font-weight: 300;
+font-size: 15px;
+line-height: 24px;
+color: gray;
+&::before{
+  content: url(../img/icons/eye.svg);
+  margin-right: 5px;
+}
+        }
+        .secondbefore {
+          &::before {
+            content: url(../img/icons/chat.svg);
+          }
+        }
+      }
+    }
+  }
+  .centercard {
+    margin: 0 30px;
+  }
+}

@@ -1,0 +1,17 @@
+@-webkit-keyframes loadingcolor {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: #f38181;
+  }
+}
+@keyframes loadingcolor {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: #f38181;
+  }
+}
+/*# sourceMappingURL=global.css.map */
